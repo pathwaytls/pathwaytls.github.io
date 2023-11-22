@@ -5,11 +5,15 @@
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="Life success starts with you. We are a life coaching service here to get you back on track.">
+    <meta name="keywords" content="Pathways, Life Coaching, Life Success, Success, Coach">
+    <meta name="author" content="Sam Scheer">
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" crossorigin="anonymous">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" crossorigin="anonymous">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
     <link href="https://fonts.googleapis.com/css?family=Comfortaa:100,200,300,400,500,600,700,800" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/5.3.0/ekko-lightbox.css">
 
@@ -17,14 +21,19 @@
 </head>
 <style>
 .navbar {padding:5px;background:#000;height:80px;width:100%;position:sticky;top:0;left:0;}
+.navbar a {color:#222;text-decoration:none;}
 .navdiv {display:flex;width:100%;justify-content:space-between;align-items:center;margin:0 10%;font-family:Comfortaa;}
 .navdiv {}
-.navlogo{display:none;max-height:110px;width:auto;}
+.navlogo {display:none;max-height:110px;width:auto;}
 .navtitle {font-size:1.5em;font-weight:bold;color:#e1c340;margin-bottom:0px;}
+.sub-menu {opacity:0;visibility:hidden;display:grid;position:absolute;top:100%;left:unset;right:10%;padding:0;z-index:100;-webkit-transition: all 0.3s ease;transition: all 0.3s ease;-ms-transform: translateY(-100%);-webkit-transform:translateY(-100%);transform: translateY(-100%);}
+.navbutton:hover>.sub-menu {opacity:1;visibility:visible;-ms-transform: translateY(0px);-webkit-transform: translateY(0px);transform: translateY(0px);}
+.sub-menu>li {position:relative;display:flex;grid-column:1/ -1;transition:all 0.2s;align-items:center;background:#333;padding:10px;}
+.sub-menu>li>a {display: flex;align-items: center;height: 100%;background: transparent;color: #fff;font-weight: 700;font-family: "Avenir Next",sans-serif;letter-spacing: normal;white-space: nowrap;text-decoration: none;text-transform: none;transition: all 0.3s ease-in;}
 .banner {padding:15% 5%;background-image: url("/images/mountains.jpg");background-size:cover;background-position:center;box-shadow: inset 0 0 0 1000px rgba(0,0,0,.2);}
 .banner-content>h1 {font-size:4em;color:#fff;font-weight:bold;text-align:center;font-family:Comfortaa;}
 .banner-content>h2 {font-size:2em;color:#fff;text-align:center;font-family:Comfortaa;}
-.button {display:flex;height:50px;background:#e1c340;border-radius:25px;padding:0px 37px;align-items: center;justify-content: center;color:#000;font-family:Comfortaa;}
+.button {display:flex;height:50px;background:#e1c340;border-radius:25px;padding:0px 18px;align-items: center;justify-content: center;color:#000;font-family:Comfortaa;}
 .inforow {display:flex;}
 .inforowinner {display:flex;width:100%;justify-content:space-evenly;align-items:center;flex:1 0 auto;}
 .infohalf {width:50%;padding:1%;}
@@ -49,14 +58,26 @@
 .infohalf {width:100%;text-align:center;}
 .infotext , .infotextright {align-items:center;margin-right:auto;margin-left:auto;padding:5%;text-align: left;}
 }
+@media screen and (max-width: 600px) {
+.hidden-xs {display: none !important;}
+}
+@media screen and (min-width: 601px) {
+.visible-xs {display: none !important;}
+}
 </style>
 
 <body>
 <container style="">
 <nav class="navbar">
     <div class="navdiv">
-        <img class="navlogo" title="Pathway to life Success Logo" src="/images/pathway-to-life-success.png" /><h1 class="navtitle">Pathway to Life Success</h1>
-        <a class="button" href="#contact">Contact</a>
+        <a href="https://pathwaytolifesuccess.com/"><img class="navlogo" title="Pathway to life Success Logo" src="/images/pathway-to-life-success.png" /><h1 class="navtitle">Pathway to Life Success</h1></a>
+        <div class="navbutton"><a class="button" href="#contact"><i class="fa-solid fa-bars"></i></a>
+            <ul class="sub-menu">
+              <li><a href="/services">Services</a></li>
+              <li><a href="/testimonials">Testimonials</a></li>
+              <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
     </div>
 </nav>
 <div class="banner">
