@@ -5,11 +5,9 @@
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="Life success starts with you. Pathway to Life Success is a life coaching service here to get you back on track.">
-    <meta name="keywords" content="Pathways, Life Coaching, Life Success, Success, Coach">
+    <meta name="description" content="View our services at Pathway to Life Success.">
+    <meta name="keywords" content="Pathways, Life Coaching, Life Success, Success, Services">
     <meta name="author" content="Sam Scheer">
-
-    <link rel="icon" type="image/x-icon" href="/images/favicon.ico.png">
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" crossorigin="anonymous">
@@ -19,7 +17,7 @@
     <link href="https://fonts.googleapis.com/css?family=Comfortaa:100,200,300,400,500,600,700,800" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/5.3.0/ekko-lightbox.css">
 
-    <title>Pathway to Life Success</title>
+    <title>Services | Pathway to Life Success</title>
 </head>
 <style>
 .navbar {padding:5px;background:#000;height:80px;width:100%;position:sticky;top:0;left:0;}
@@ -28,12 +26,10 @@
 .navdiv {}
 .navlogo {display:none;max-height:110px;width:auto;}
 .navtitle {font-size:1.5em;font-weight:bold;color:#e1c340;margin-bottom:0px;}
-.sub-menu {opacity:0;visibility:hidden;display:none;position:absolute;top:100%;left:unset;right:10%;padding:0;z-index:100;-webkit-transition: all 0.3s ease;transition: all 0.3s ease;-ms-transform: translateY(-100%);-webkit-transform:translateY(-100%);transform: translateY(-100%);}
-.sub-menu.open {display: grid;}
+.sub-menu {opacity:0;visibility:hidden;display:grid;position:absolute;top:100%;left:unset;right:10%;padding:0;z-index:100;-webkit-transition: all 0.3s ease;transition: all 0.3s ease;-ms-transform: translateY(-100%);-webkit-transform:translateY(-100%);transform: translateY(-100%);}
 .navbutton:hover>.sub-menu {opacity:1;visibility:visible;-ms-transform: translateY(0px);-webkit-transform: translateY(0px);transform: translateY(0px);}
-.sub-menu>li {position:relative;display:flex;grid-column:1/ -1;transition:all 0.2s;align-items:center;background:#333;padding:10px;transition: background 0.3s;}
-.sub-menu li:hover {background: #444;}
-.sub-menu>li>a {display: flex;align-items: center;height: 100%;background: transparent;color: #fff;font-weight: 700;font-family: Comfortaa,sans-serif;letter-spacing: normal;white-space: nowrap;text-decoration: none;text-transform: none;transition: all 0.3s ease-in;transition: color 0.3s;}
+.sub-menu>li {position:relative;display:flex;grid-column:1/ -1;transition:all 0.2s;align-items:center;background:#333;padding:10px;}
+.sub-menu>li>a {display: flex;align-items: center;height: 100%;background: transparent;color: #fff;font-weight: 700;font-family: "Avenir Next",sans-serif;letter-spacing: normal;white-space: nowrap;text-decoration: none;text-transform: none;transition: all 0.3s ease-in;}
 .banner {padding:15% 5%;background-image: url("/images/mountains.jpg");background-size:cover;background-position:center;box-shadow: inset 0 0 0 1000px rgba(0,0,0,.2);}
 .banner-content>h1 {font-size:4em;color:#fff;font-weight:bold;text-align:center;font-family:Comfortaa;}
 .banner-content>h2 {font-size:2em;color:#fff;text-align:center;font-family:Comfortaa;}
@@ -47,10 +43,6 @@
 .infoimg {width:100%;padding:3%;}
 .footer {background:#000;font-family:Comfortaa;}
 .contactinfo {max-width:900px;margin:auto;padding:10px;color:#e1c340;font-family:Comfortaa;}
-@media (min-width: 768px) {
-  .sub-menu {display: grid; }
-  .navbutton:hover .sub-menu {opacity: 1;visibility: visible;transform: translateY(0);}
-}
 @media screen and (max-width: 1050px) {
 .infologo {margin-left:auto;}
 }
@@ -58,7 +50,7 @@
 .navdiv {margin:6%;}
 .navbar {height:auto;}
 .navtitle {font-size:1.2em;}
-.button {display:flex;height:auto;padding:8px 10px;}
+.button {display:flex;height:auto;padding:5px 15px;}
 .banner {padding:25% 5%;}
 .banner-content>h1 {font-size:3em;}
 .banner-content>h2 {font-size:1.7em;}
@@ -74,129 +66,27 @@
 }
 </style>
 
-<script>
-function toggleMenu() {
-  document.getElementById("sub-menu").classList.toggle("open"); 
-}
-</script>
-
 <body>
 <container style="">
 <nav class="navbar">
     <div class="navdiv">
         <a href="https://pathwaytolifesuccess.com/"><img class="navlogo" title="Pathway to life Success Logo" src="/images/pathway-to-life-success.png" /><h1 class="navtitle">Pathway to Life Success</h1></a>
-        <div class="navbutton"><a class="button" onclick="toggleMenu()"><i class="fa-solid fa-bars"></i></a>
-            <ul id="sub-menu" class="sub-menu">
+        <div class="navbutton"><a class="button" href="#contact"><i class="fa-solid fa-bars"></i></a>
+            <ul class="sub-menu">
               <li><a href="/services">Services</a></li>
               <li><a href="/testimonials">Testimonials</a></li>
-              <li><a href="#contact">Contact</a></li>
+              <li><a href="/services#contact">Contact</a></li>
             </ul>
         </div>
     </div>
 </nav>
-<div class="banner">
-    <div class="banner-content">
-        <h1>LIFE SUCCESS</h1>
-        <h2>STARTS WITH YOU</h2>
-    </div>
+<div class="inforow hidden-xs">
+    <iframe src="https://app.practice.do/me/joseph-tarzian-1" style="width:100%;height:2200px;"></iframe>
 </div>
-<div class="inforow">
-    <div class="inforowinner">
-        <div class="infohalf">
-        <div class="infotext">
-            <h2>Life Coaching</h2>
-            <ul>
-                <li>Clarify objective, goals & direction</li>
-                <li>Develop career path</li>
-                <li>Explore new opportunities</li>
-                <li>Assess potential with new transition</li>
-                <li>Renewed control of life and new endeavor</li>
-            </ul>
-        </div>
-        </div>
-        <div class="infohalf" style="background:#000;">
-            <img class="infologo" title="Pathway to life Success Logo" src="/images/pathway-to-life-success.png" />
-        </div>
-    </div>
+<div class="inforow visible-xs">
+    <iframe src="https://app.practice.do/me/joseph-tarzian-1" style="width:100%;height:3000px;"></iframe>
 </div>
-<div class="inforow" style="margin-top:25px;">
-    <div class="inforowinner">
-        <div class="infohalf" style="">
-            <img class="infoimg" title="Entrepreneurial Development Leads to Growth" src="/images/entrepreneur.jpg" />
-        </div>
-        <div class="infohalf">
-        <div class="infotextright">
-            <h2>Entrepreneurial Development Coaching</h2>
-            <p>Want to start up a new business, but don’t know where to start? We can:</p>
-            <ul>
-                <li>Identify goals</li>
-                <li>Assess and overcome potential obstacles</li>
-                <li>Formulate action plan</li>
-                <li>Take control of your life and career</li>
-            </ul>
-        </div>
-        </div>
-    </div>
-</div>
-<div class="inforow" style="margin-top:25px;">
-    <div class="inforowinner">
-        <div class="infohalf">
-        <div class="infotext">
-            <h2>Health and Wellbeing Coaching</h2>
-            <ul>
-                <li>Support and guidance</li>
-                <li>Navigation through obstacles and opportunities</li>
-                <li>Motivation and approach</li>
-                <li>Develop action plan</li>
-                <li>Life and career transition support</li>
-            </ul>
-        </div>
-        </div>
-        <div class="infohalf" style="">
-            <img class="infoimg" title="Balance in Life - Rock Tower" src="/images/rock-tower-jeremy-thomas-unsplash.jpg" />
-        </div>
-    </div>
-</div>
-<div class="inforow" style="margin-top:25px;">
-    <div class="inforowinner">
-        <div class="infohalf" style="">
-            <img class="infoimg" title="Leadership Coaching" src="/images/leading-group-jehyun-sung-unsplash.jpg" />
-        </div>
-        <div class="infohalf">
-        <div class="infotextright">
-            <h2>Leadership Coaching</h2>
-            <ul>
-                <li>Life &amp; career evolution and growth</li>
-                <li>Navigate career opportunities</li>
-                <li>Initiative challenges and leadership</li>
-                <li>Advance goals and direction</li>
-                <li>Find purpose and gratification</li>
-                <li>Find success</li>
-            </ul>
-        </div>
-        </div>
-    </div>
-</div>
-<div class="inforow" style="margin-top:25px;">
-    <div class="inforowinner">
-        <div class="infohalf">
-        <div class="infotext">
-            <h2>Metaphysical Coaching</h2>
-            <ul>
-                <li>Energy Balancing</li>
-                <li>Readings</li>
-                <li>Reiki</li>
-                <li>Spiritual guidance and forecasting</li>
-                <li>Mediation guidance and how to incorporate spirituality into your day-to-day life</li>
-                <li>Shamanic energy healing and Chakra balancing</li>
-            </ul>
-        </div>
-        </div>
-        <div class="infohalf" style="">
-            <img class="infoimg" style="max-width:500px;" title="Metaphysical Coaching" src="/images/Metaphysical-Healing-daniele-levis-pelusi-unsplash.jpg" />
-        </div>
-    </div>
-</div>
+
 <div id="contact" class="footer">
     <div class="contactinfo">
         <span style="font-size:1.5em;font-weight:bold">CONTACT</span>
