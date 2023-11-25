@@ -28,7 +28,8 @@
 .navdiv {}
 .navlogo {display:none;max-height:110px;width:auto;}
 .navtitle {font-size:1.5em;font-weight:bold;color:#e1c340;margin-bottom:0px;}
-.sub-menu {opacity:0;visibility:hidden;display:grid;position:absolute;top:100%;left:unset;right:10%;padding:0;z-index:100;-webkit-transition: all 0.3s ease;transition: all 0.3s ease;-ms-transform: translateY(-100%);-webkit-transform:translateY(-100%);transform: translateY(-100%);}
+.sub-menu {opacity:0;visibility:hidden;display:none;position:absolute;top:100%;left:unset;right:10%;padding:0;z-index:100;-webkit-transition: all 0.3s ease;transition: all 0.3s ease;-ms-transform: translateY(-100%);-webkit-transform:translateY(-100%);transform: translateY(-100%);}
+.sub-menu.open {display: grid;}
 .navbutton:hover>.sub-menu {opacity:1;visibility:visible;-ms-transform: translateY(0px);-webkit-transform: translateY(0px);transform: translateY(0px);}
 .sub-menu>li {position:relative;display:flex;grid-column:1/ -1;transition:all 0.2s;align-items:center;background:#333;padding:10px;}
 .sub-menu>li>a {display: flex;align-items: center;height: 100%;background: transparent;color: #fff;font-weight: 700;font-family: "Avenir Next",sans-serif;letter-spacing: normal;white-space: nowrap;text-decoration: none;text-transform: none;transition: all 0.3s ease-in;}
